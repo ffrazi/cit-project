@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2e8b57;
+        }
+        .planet {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2e8b57;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #1e6b47;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Solar System</h1>
+    </header>
+    <main>
+        <p>The solar system consists of the Sun and the objects that orbit it, including eight planets, their moons, and other celestial bodies.</p>
+        
+        <section>
+            <h2>The Sun</h2>
+            <p>The Sun is the star at the center of the solar system. It is a nearly perfect sphere of hot plasma and provides the energy that sustains life on Earth.</p>
+            <img src="data:image/jpeg;base64,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" alt="The Sun" width="600" height="400">
+        </section>
+        
+        <section class="planet">
+            <h2>Mercury</h2>
+            <p>Mercury is the closest planet to the Sun and the smallest planet in the solar system. It has a very thin atmosphere and is known for its extreme temperature variations.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Venus</h2>
+            <p>Venus is the second planet from the Sun and is similar in size and structure to Earth. It has a thick, toxic atmosphere that traps heat, making it the hottest planet in the solar system.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Earth</h2>
+            <p>Earth is the third planet from the Sun and the only known planet to support life. It has a diverse climate and a protective atmosphere that sustains life.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Mars</h2>
+            <p>Mars is the fourth planet from the Sun and is known as the Red Planet due to its reddish appearance. It has the largest volcano and canyon in the solar system.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Jupiter</h2>
+            <p>Jupiter is the fifth planet from the Sun and the largest planet in the solar system. It is a gas giant with a strong magnetic field and dozens of moons.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Saturn</h2>
+            <p>Saturn is the sixth planet from the Sun and is known for its prominent ring system. It is a gas giant with a complex system of rings and moons.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Uranus</h2>
+            <p>Uranus is the seventh planet from the Sun and is unique for its tilted axis, which causes it to rotate on its side. It is an ice giant with a faint ring system.</p>
+        </section>
+        
+        <section class="planet">
+            <h2>Neptune</h2>
+            <p>Neptune is the eighth and farthest planet from the Sun. It is an ice giant with strong winds and storms, including the Great Dark Spot.</p>
+        </section>
+
+        <section>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>The solar system is about 4.6 billion years old.</li>
+                <li>Jupiter has the shortest day of all the planets, completing one rotation in just under 10 hours.</li>
+                <li>Venus rotates in the opposite direction to most planets.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Planets in Order from the Sun</h2>
+            <ol>
+                <li>Mercury</li>
+                <li>Venus</li>
+                <li>Earth</li>
+                <li>Mars</li>
+                <li>Jupiter</li>
+                <li>Saturn</li>
+                <li>Uranus</li>
+                <li>Neptune</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Planetary Characteristics</h2>
+            <dl>
+                <dt>Mercury</dt>
+                <dd>Smallest planet, closest to the Sun.</dd>
+                <dt>Venus</dt>
+                <dd>Hottest planet, thick toxic atmosphere.</dd>
+                <dt>Earth</dt>
+                <dd>Only planet known to support life.</dd>
+                <dt>Mars</dt>
+                <dd>Known as the Red Planet, has the largest volcano.</dd>
+                <dt>Jupiter</dt>
+                <dd>Largest planet, gas giant with strong magnetic field.</dd>
+                <dt>Saturn</dt>
+                <dd>Known for its prominent ring system.</dd>
+                <dt>Uranus</dt>
+                <dd>Unique for its tilted axis, rotates on its side.</dd>
+                <dt>Neptune</dt>
+                <dd>Farthest planet from the Sun, strong winds and storms.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Additional Facts</h2>
+            <ul>
+                <li>The asteroid belt lies between Mars and Jupiter.</li>
+                <li>Pluto, once considered the ninth planet, is now classified as a dwarf planet.</li>
+                <li>The Kuiper Belt extends beyond Neptune and contains many small icy bodies.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Solar System Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=libKVRa01L8&pp=ygUMc29sYXIgc3lzdGVt" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Planetary Speeds and Timespans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planet</th>
+                        <th>Orbital Speed (km/s)</th>
+                        <th>Orbital Period (Earth years)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mercury</td>
+                        <td>47.87</td>
+                        <td>0.24</td>
+                    </tr>
+                    <tr>
+                        <td>Venus</td>
+                        <td>35.02</td>
+                        <td>0.62</td>
+                    </tr>
+                    <tr>
+                        <td>Earth</td>
+                        <td>29.78</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mars</td>
+                        <td>24.07</td>
+                        <td>1.88</td>
+                    </tr>
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>13.07</td>
+                        <td>11.86</td>
+                    </tr>
+                    <tr>
+                        <td>Saturn</td>
+                        <td>9.69</td>
+                        <td>29.46</td>
+                    </tr>
+                    <tr>
+                        <td>Uranus</td>
+                        <td>6.81</td>
+                        <td>84.01</td>
+                    </tr>
+                    <tr>
+                        <td>Neptune</td>
+                        <td>5.43</td>
+                        <td>164.79</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>

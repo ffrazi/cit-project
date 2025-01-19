@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f6e7c1, #efd19f, #e6c28a); /* Soft autumn gradient */
+    margin: 0;
+    padding: 0;
+    color: #5c4033; /* Soft brown for text */
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #4b2e2b; /* Rich brown for headings */
+}
+/* Apply background to the hero section */
+.hero-section {
+    background:linear-gradient(to bottom right,#4b2e2b,white,rgb(226, 176, 176)) ; /* Replace with your image URL */
+    background-size: contain;
+    background-position: center;
+    padding: 100px 0; /* Adjust the padding as needed */
+}
+
+/* Other styling code... */
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f5d097 !important; /* Subtle muted gold */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b2e2b !important; /* Rich brown */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #4b2e2b !important; /* Rich brown */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: #d3a86a !important; /* Soft muted golden tone */
+    color: #fff !important; /* White for better contrast */
+}
+
+.navbar-toggler-icon {
+    background-color: white !important;
+}
+
+/* Page Layout */
+.container {
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+/* Product Cards */
+.card {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #705946; /* Soft Brown border */
+    border-radius: 8px; /* Rounded corners for a smooth look */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5c4033; /* Soft brown */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #705946; /* Muted brown */
+}
+
+.btn-primary {
+    background-color: #d3a86a; /* Muted golden brown */
+    border: none;
+    color: #4b2e2b; /* Rich brown */
+}
+
+.btn-primary:hover {
+    background-color: #b89058; /* Darker muted golden brown */
+    color: white; /* White for contrast */
+}
+
+/* Cart Page */
+.cart-page {
+    padding: 20px;
+    color: #5c4033; /* Soft brown */
+}
+
+.cart-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6c28a; /* Light muted gold */
+    padding-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #d3a86a, #b89058, #a67945); /* Warm gradient */
+    color: #4b2e2b; /* Rich brown for text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4b2e2b; /* Rich brown */
+}
+ /* About Us Section Styling */
+ .about-us-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.about-us-image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.about-us-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.about-us-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffdd57;
+}
+.about-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important;
+}
+/* Custom Styles for Carousel Caption */
+/* Custom Styles for Carousel Caption */
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Shadow for extra visibility */
+    box-sizing: border-box;
+    width: 1000px;
+    height: 200px;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    color: #ffdd57;
+}
+
+.carousel-caption p {
+    margin-bottom: 15px; /* Space between paragraph and button */
+}
+
+.carousel-caption .btn {
+    font-size: 16px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
